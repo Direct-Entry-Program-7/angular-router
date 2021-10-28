@@ -11,6 +11,7 @@ export class AppComponent {
 
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
+
       if (event instanceof NavigationEnd){
         switch(event.urlAfterRedirects){
           case "/dashboard":

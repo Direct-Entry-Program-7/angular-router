@@ -6,6 +6,7 @@ import {ManageItemsComponent} from "./manage-items/manage-items.component";
 import {PlaceOrderComponent} from "./place-order/place-order.component";
 import {SearchOrdersComponent} from "./search-orders/search-orders.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
+import {ExitGuard} from "./exit.guard";
 
 const routes: Routes = [
 
@@ -27,7 +28,8 @@ const routes: Routes = [
   },
   {
     path: 'place-order',
-    component: PlaceOrderComponent
+    component: PlaceOrderComponent,
+    canDeactivate: [ExitGuard]
   },
   {
     path: 'search-orders',
