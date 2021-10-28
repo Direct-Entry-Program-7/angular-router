@@ -1,0 +1,22 @@
+nav{
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 1px solid lightgray;
+
+  menu{
+    list-style: none;
+
+    li{
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover{
+        background-color: lightgray;
+      }
+    }
+  }
+}
