@@ -9,6 +9,7 @@ import { ManageCustomersComponent } from './manage-customers/manage-customers.co
 import { ManageItemsComponent } from './manage-items/manage-items.component';
 import { PlaceOrderComponent } from './place-order/place-order.component';
 import { SearchOrdersComponent } from './search-orders/search-orders.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SearchOrdersComponent } from './search-orders/search-orders.component';
     ManageCustomersComponent,
     ManageItemsComponent,
     PlaceOrderComponent,
-    SearchOrdersComponent
+    SearchOrdersComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
